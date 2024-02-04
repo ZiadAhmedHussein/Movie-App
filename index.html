@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link my style sheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- link font awesome style sheet -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- link bootstrap style sheet -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <title>Movie App</title>
+</head>
+<body>
+  
+  <nav class="main-navbar d-flex position-fixed top-0 bottom-0 z-2 border-3 bg-blak">
+    <div class="navbar-content d-flex flex-column justify-content-between p-4 bg-black text-white">
+      <ul class="main-links list-unstyled d-flex flex-column gap-3">
+        <li class="position-relative">
+          <a href="#nowPlaying">Now Playing</a>
+        </li>
+        <li class="position-relative">
+          <a href="#popular">Popular</a>
+        </li>
+        <li class="position-relative">
+          <a href="#topRated">Top Rated</a>
+        </li>
+        <li class="position-relative">
+          <a href="#trending">Trending</a>
+        </li>
+        <li class="position-relative">
+          <a href="#upComing">Up Coming</a>
+        </li>
+        <li class="position-relative">
+          <a href="#contactUs">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="navbar-copyright d-flex flex-column gap-2">
+        <ul class="list-unstyled d-flex gap-2 mb-0">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="m-0">
+          Copyright Â© 2019 All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+
+
+
+    <div class="navbar-shower d-flex flex-column align-items-center justify-content-lg-between justify-content-center py-4 px-2 text-black">
+      <div class="logo d-none d-lg-flex justify-content-center w-75 ">
+        <a href="#">
+          <img class="w-100" src="images/logo.png" alt="logo-image">
+        </a>
+      </div>
+      <div class="navbar-shower-icon fs-3 px-3">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-x d-none"></i>
+      </div>
+      <ul class="share-icon list-unstyled px-3 d-none d-lg-block">
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-share-nodes"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="py-5 min-vh-100 position-relative">
+    <div class="layout position-absolute w-100 h-100 z-1 d-none"></div>
+    <div class="lazy-load d-flex justify-content-center align-items-center z-3 position-fixed top-0 start-0 w-100 bg-black h-100">
+      <div class="spinner-border text-white fs-1" role="status">
+      </div>
+    </div>
+    <div class="container">
+      <div class="search-movies mb-5 w-50 mx-auto">
+        <input class="search-name py-2 px-3 bg-black text-white w-100 rounded rounded-pill border-2 border-white" type="text" placeholder="Search">
+      </div>
+
+      <div class="row header-movies min-vh-100">
+        
+      </div>
+
+      <div class="contact-us mt-5 d-flex flex-column gap-4">
+        <h2 class="text-white fw-normal fs-2">Contact Us</h2>
+
+        <form action="#" class="contactUs-form d-flex justify-content-center align-items-center flex-column gap-3">
+
+          <div class="row g-3">
+
+            <div class="inner-uName px-3 col-12 col-md-6 position-relative">
+              <label for="uName" class="d-none"></label>
+              <input class="p-2 w-100 border-0 bg-transparent border-bottom text-white" placeholder="Enter Your Name" id="uName" type="text">
+              
+              <p class="name-valid opacity-0 mt-2 text-danger">Special characters and numbers not allowed</p>
+              <i class="valid-icon fa-regular fa-circle-check position-absolute top-0 start-0"></i>
+            </div>
+    
+            <div class="inner-uEmail px-3 col-12 col-md-6 position-relative">
+              <label for="uEmail" class="d-none"></label>
+              <input class="p-2 w-100 border-0 bg-transparent border-bottom text-white" placeholder="Enter Your Email" id="uEmail" type="email">
+              
+              <p class="email-valid mt-2 opacity-0 text-danger">Email not valid *exemple@yyy.zzz</p>
+              <i class="valid-icon fa-regular fa-circle-check position-absolute top-0 start-0"></i>
+            </div>
+    
+            <div class="inner-uPhone px-3 col-12 col-md-6 position-relative">
+              <label for="uPhone" class="d-none"></label>
+              <input class="p-2 w-100 border-0 bg-transparent border-bottom text-white" placeholder="Enter Your Phone" id="uPhone" type="phone">
+              
+              <p class="phone-valid mt-2 opacity-0 text-danger">Enter valid Phone Number</p> 
+              <i class="valid-icon fa-regular fa-circle-check position-absolute top-0 start-0"></i>         
+            </div>
+    
+            <div class="inner-uAge px-3 col-12 col-md-6 position-relative">
+              <label for="uAge" class="d-none"></label>
+              <input class="p-2 w-100 border-0 bg-transparent border-bottom text-white" placeholder="Enter Your Age" id="uAge" type="number" min="15">
+              <p class="age-valid mt-2 opacity-0 text-danger">Enter valid age</p>
+              <i class="valid-icon fa-regular fa-circle-check position-absolute top-0 start-0"></i>
+            </div>
+
+            <div class="inner-uPassword px-3 col-12 col-md-6 position-relative">
+              <label for="uPassword" class="d-none"></label>
+              <input class="p-2 w-100 border-0 bg-transparent border-bottom text-white" placeholder="Enter Your Password" id="uPassword" type="password">
+              <p class="password-valid mt-2 opacity-0 text-danger">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+              <i class="valid-icon fa-regular fa-circle-check position-absolute top-0 start-0"></i>
+            </div>
+    
+            <div class="inner-uRepassword px-3 col-12 col-md-6 position-relative">
+              <label for="uRepassword" class="d-none"></label>
+              <input class="p-2 w-100 border-0 bg-transparent border-bottom text-white" placeholder="Repassword" id="uRepassword" type="password">
+              <p class="repassword-valid mt-2 opacity-0 text-danger">Enter valid repassword</p>
+              <i class="valid-icon fa-regular fa-circle-check position-absolute top-0 start-0"></i>
+            </div>
+          </div>
+            
+          <button class="btn btn-outline-danger" type="submit">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+
+    
+    
+  </header>
+
+
+	<!-- link bootstrap js script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- link jquery js script -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+	
+	<!-- link my js script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

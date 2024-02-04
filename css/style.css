@@ -1,0 +1,200 @@
+
+
+
+
+
+
+
+
+
+
+/* utilities */
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.lazy-load {
+  display: none;
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0D0D0D;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 12px;
+  height: 5px;
+}
+
+
+
+
+
+
+/* navbar */
+nav.main-navbar 
+.navbar-content {
+  width: 270px;
+  transition: .5s;
+}
+.navbar-shower {
+  width: 60px;
+  background-color: white;
+  transition: .5s;
+}
+@media screen and (max-width: 991px) {
+  .navbar-shower {
+    background-color: transparent;
+  }
+  .navbar-shower .navbar-shower-icon {
+    color: white !important;
+  }
+}
+
+.navbar-shower .navbar-shower-icon i {
+  cursor: pointer;
+}
+
+
+/* header */
+header {
+  background-color: #0D0D0D;
+}
+header .layout {
+  background-color: rgba(0, 0, 0, 0.749);
+  
+}
+.movie-card-content .movie-img {
+  transition: .5s;
+}
+
+.movie-card-content:hover .movie-img {
+  transform: scale(1.20) rotate(7deg);
+}
+.movie-card-content:hover .movie-details {
+  opacity: 1;
+}
+
+.movie-card-content .movie-details {
+  transition: .5s;
+  background-color: rgba(0, 0, 0, 0.893);
+  opacity: 0;
+}
+.movie-card-content .movie-details .movie-overview {
+  color: rgba(250, 235, 215, 0.87) !important;
+  max-height: 35%;
+}
+.movie-card-content .movie-details .movie-overview::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 5px;
+}
+
+.movie-card-content .movie-details .movie-overview::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 13px;
+}
+
+.movie-card-content .movie-details .movie-overview::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 12px;
+  height: 5px;
+}
+
+
+.movie-card-content .movie-details ul li i {
+  color: yellow;
+}
+
+.movie-card-content .movie-details .vote-average {
+  width: 45px;
+  height: 45px;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactUs-form input:focus {
+  outline: 0;
+}
+
+.contactUs-form p,
+.contactUs-form input {
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .mail-card-content
+.mail-name, 
+.mail-card-content
+.catigory-name{
+  top: 100%;
+  transition: .4s;
+  background-color: rgba(255, 255, 255, 0.562);
+}
+
+.mail-card-content:hover
+.mail-name,
+.mail-card-content:hover
+.catigory-name{
+  top: 0;
+}
+
+.area-card-content {
+  cursor: pointer;
+}
+.ingredient-card-content {
+  cursor: pointer;
+} */
+
+/* section:meal details */
+/* section.meal-details {
+  display: none;
+} */
+
+
+
+/* category section */
+/* .category-card-content
+.category-name {
+  top: 100%;
+  transition: .4s;
+  background-color: rgba(255, 255, 255, 0.685);
+}
+.category-card-content:hover
+.category-name {
+  top: 0;
+}
+section.meal-categories {
+  display: none;
+} */
